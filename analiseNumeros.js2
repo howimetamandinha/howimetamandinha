@@ -1,0 +1,9 @@
+function analisarIntervalo(inicio, fim) {
+  let pares = 0, impares = 0, divPor5 = 0;
+  for (let i = inicio; i <= fim; i++) {
+    if (i % 2 === 0) pares++;
+    else impares++;
+    if (i % 5 === 0) divPor5++;
+  }
+  console.log(`Pares: ${pares}, Ímpares: ${impares}, Divisíveis por 5: ${divPor5}`);
+}
