@@ -1,0 +1,18 @@
+let listaCompras = [];
+
+function adicionarItem(item) {
+  listaCompras.push(item);
+}
+
+function removerItem(item) {
+  const index = listaCompras.indexOf(item);
+  if (index > -1) listaCompras.splice(index, 1);
+}
+
+function exibirItens() {
+  console.log("Lista de compras:", listaCompras);
+}
+
+function verificarItem(item) {
+  console.log(listaCompras.includes(item) ? "Item está na lista." : "Item não encontrado.");
+}
