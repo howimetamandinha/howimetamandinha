@@ -1,0 +1,14 @@
+const livros = [
+  { titulo: "Dom Casmurro", autor: "Machado de Assis", ano: 1899 },
+  { titulo: "O Hobbit", autor: "J.R.R. Tolkien", ano: 1937 },
+  { titulo: "1984", autor: "George Orwell", ano: 1949 }
+];
+
+function buscarLivro(titulo) {
+  const livro = livros.find(l => l.titulo.toLowerCase() === titulo.toLowerCase());
+  if (livro) {
+    console.log("Livro encontrado:", livro);
+  } else {
+    console.log("Livro não encontrado.");
+  }
+}
