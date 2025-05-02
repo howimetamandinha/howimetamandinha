@@ -1,0 +1,5 @@
+function tabuadaPersonalizada(numero, ate) {
+  for (let i = 1; i <= ate; i++) {
+    console.log(`${numero} x ${i} = ${numero * i}`);
+  }
+}
