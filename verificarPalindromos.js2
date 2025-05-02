@@ -1,0 +1,5 @@
+function ehPalindromo(texto) {
+  const formatado = texto.replace(/\s/g, "").toLowerCase();
+  const invertido = formatado.split("").reverse().join("");
+  return formatado === invertido;
+}
