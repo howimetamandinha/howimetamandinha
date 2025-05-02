@@ -1,0 +1,17 @@
+function jogoAdivinhacao() {
+  const numeroSecreto = Math.floor(Math.random() * 100) + 1;
+  let tentativas = 10;
+  while (tentativas > 0) {
+    const palpite = parseInt(prompt("Adivinhe o número (1 a 100):"));
+    if (palpite === numeroSecreto) {
+      console.log("Acertou!");
+      return;
+    } else if (palpite < numeroSecreto) {
+      console.log("Tente um número maior.");
+    } else {
+      console.log("Tente um número menor.");
+    }
+    tentativas--;
+  }
+  console.log("Suas tentativas acabaram! O número era:", numeroSecreto);
+}
